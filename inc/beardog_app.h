@@ -1,10 +1,9 @@
-/** @file beardog_app.h
- *
- * @brief A description of the module’s purpose.
- *
- * @par
- * COPYRIGHT NOTICE: (c) 2018 Barr Group.  All rights reserved.
- */
+/* 
+   Filename: beardog_app.h
+   Author: MrBeardog
+   Date: 2023-10-03
+   Description: Header file for beardog_app
+*/
 
 #ifndef BEARDOG_APP_H
 #define BEARDOG_APP_H
@@ -15,4 +14,4 @@
 
 #endif /* BEARDOG_APP_H */
 
-/*** end of file ***/
+/*** End of File ***/

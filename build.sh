@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Define usage function
@@ -10,6 +9,7 @@ function usage {
   echo "  clean    - Clean the project"
   echo "  run      - Run the project"
   echo "  dbg      - Debug the project"
+  echo "  rst      - Reset the project"
   exit 1
 }
 
@@ -124,6 +124,7 @@ case "$tool_build" in
 esac
 string_run="./$run_target"
 string_debug="gdb $run_target"
+string_reset="rm -rf $dir_build_full"
 
 # Check the command argument
 case "$1" in
@@ -142,6 +143,9 @@ case "$1" in
   "dbg")
     $string_debug
     ;;
+  "rst")
+    $string_reset
+    ;;
   *)
     # Invalid command
     usage
@@ -150,4 +154,3 @@ esac
 
 # Change back to the previous directory
 cd "$dir_current"
-
